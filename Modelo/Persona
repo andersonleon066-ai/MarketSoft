@@ -1,0 +1,27 @@
+using System;
+
+public class Persona
+{
+    protected int id;
+    protected string nombre;
+    protected string telefono;
+
+    public Persona(int id, string nombre, string telefono)
+    {
+        this.id = id;
+        this.nombre = nombre;
+        this.telefono = telefono;
+    }
+
+    public void MostrarPersona()
+    {
+        Console.WriteLine("ID: " + id);
+        Console.WriteLine("Nombre: " + nombre);
+        Console.WriteLine("Telefono: " + telefono);
+    }
+
+    public string GetNombre()
+    {
+        return nombre;
+    }
+}
