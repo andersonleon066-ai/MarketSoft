@@ -1,26 +1,34 @@
-using System;
-
-public class Cajero : Empleado
+namespace PuntoDeVenta.Modelo
 {
-    private string turno;
-
-    public Cajero(int id, string nombre,
-                  string telefono, double salario,
-                  string turno)
-        : base(id, nombre, telefono, salario)
+    public class Cajero : Empleado
     {
-        this.turno = turno;
-    }
+        private string turno;
 
-    public void CobrarVenta()
-    {
-        Console.WriteLine(nombre + " está cobrando una venta.");
-    }
+        public string Turno
+        {
+            get { return turno; }
+            set
+            {
+                if (value == "Mañana" || value == "Tarde" || value == "Noche")
+                {
+                    turno = value;
+                }
+                else
+                {
+                    Console.WriteLine("Error: El turno debe ser Mañana, Tarde o Noche.");
+                }
+            }
+        }
 
-    public void MostrarCajero()
-    {
-        Console.WriteLine("=== CAJERO ===");
-        MostrarEmpleado();
-        Console.WriteLine("Turno: " + turno);
+        public Cajero(string nombre, string documento, int edad, double salario, string turno)
+            : base(nombre, documento, edad, salario, "Cajero")
+        {
+            this.Turno = turno;
+        }
+
+        public override string MostrarRol()
+        {
+            return "Cajero";
+        }
     }
 }

@@ -1,15 +1,47 @@
-using System;
-
-public class Cliente : Persona
+namespace PuntoDeVenta.Modelo
 {
-    public Cliente(int id, string nombre, string telefono)
-        : base(id, nombre, telefono)
+    public class Cliente : Persona
     {
-    }
+        private int puntos;
 
-    public void MostrarCliente()
-    {
-        Console.WriteLine("=== CLIENTE ===");
-        MostrarPersona();
+        public int Puntos
+        {
+            get { return puntos; }
+            set
+            {
+                if (value >= 0)
+                {
+                    puntos = value;
+                }
+                else
+                {
+                    Console.WriteLine("Error: Los puntos no pueden ser negativos.");
+                }
+            }
+        }
+
+        public Cliente(string nombre, string documento, int edad, int puntos)
+            : base(nombre, documento, edad)
+        {
+            this.Puntos = puntos;
+        }
+
+        public void AcumularPuntos(int cantidad)
+        {
+            if (cantidad > 0)
+            {
+                puntos += cantidad;
+                Console.WriteLine("Puntos acumulados: " + puntos);
+            }
+            else
+            {
+                Console.WriteLine("Error: La cantidad debe ser mayor a cero.");
+            }
+        }
+
+        public override string MostrarRol()
+        {
+            return "Cliente";
+        }
     }
 }

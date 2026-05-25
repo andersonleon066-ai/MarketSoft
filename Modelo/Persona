@@ -1,27 +1,49 @@
-using System;
-
-public class Persona
+namespace PuntoDeVenta.Modelo
 {
-    protected int id;
-    protected string nombre;
-    protected string telefono;
-
-    public Persona(int id, string nombre, string telefono)
+    public class Persona
     {
-        this.id = id;
-        this.nombre = nombre;
-        this.telefono = telefono;
-    }
+        protected string nombre;
+        protected string documento;
+        protected int edad;
 
-    public void MostrarPersona()
-    {
-        Console.WriteLine("ID: " + id);
-        Console.WriteLine("Nombre: " + nombre);
-        Console.WriteLine("Telefono: " + telefono);
-    }
+        public string Nombre { get { return nombre; } }
+        public string Documento { get { return documento; } }
 
-    public string GetNombre()
-    {
-        return nombre;
+        public int Edad
+        {
+            get { return edad; }
+            set
+            {
+                if (value >= 18 && value <= 100)
+                {
+                    edad = value;
+                }
+                else
+                {
+                    Console.WriteLine("Error: La edad debe estar entre 18 y 100 años.");
+                }
+            }
+        }
+
+        public Persona(string nombre, string documento, int edad)
+        {
+            this.nombre = nombre;
+            this.documento = documento;
+            this.Edad = edad;
+        }
+
+        public virtual string MostrarRol()
+        {
+            return "Persona";
+        }
+
+        public virtual void MostrarInfo()
+        {
+            Console.WriteLine("======================");
+            Console.WriteLine("Rol: " + MostrarRol());
+            Console.WriteLine("Nombre: " + this.nombre);
+            Console.WriteLine("Documento: " + this.documento);
+            Console.WriteLine("Edad: " + this.edad);
+        }
     }
 }

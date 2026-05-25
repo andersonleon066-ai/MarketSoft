@@ -1,20 +1,52 @@
-using System;
-
-public class Empleado : Persona
+namespace PuntoDeVenta.Modelo
 {
-    protected double salario;
-
-    public Empleado(int id, string nombre,
-                    string telefono, double salario)
-        : base(id, nombre, telefono)
+    public class Empleado : Persona
     {
-        this.salario = salario;
-    }
+        protected double salario;
+        protected string cargo;
 
-    public void MostrarEmpleado()
-    {
-        Console.WriteLine("=== EMPLEADO ===");
-        MostrarPersona();
-        Console.WriteLine("Salario: " + salario);
+        public double Salario
+        {
+            get { return salario; }
+            set
+            {
+                if (value > 0)
+                {
+                    salario = value;
+                }
+                else
+                {
+                    Console.WriteLine("Error: El salario debe ser mayor a cero.");
+                }
+            }
+        }
+
+        public string Cargo
+        {
+            get { return cargo; }
+            set
+            {
+                if (value != "")
+                {
+                    cargo = value;
+                }
+                else
+                {
+                    Console.WriteLine("Error: El cargo no puede estar vacío.");
+                }
+            }
+        }
+
+        public Empleado(string nombre, string documento, int edad, double salario, string cargo)
+            : base(nombre, documento, edad)
+        {
+            this.Salario = salario;
+            this.Cargo = cargo;
+        }
+
+        public override string MostrarRol()
+        {
+            return "Empleado";
+        }
     }
 }
