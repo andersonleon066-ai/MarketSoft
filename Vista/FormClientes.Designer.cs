@@ -14,6 +14,7 @@ namespace PuntoDeVenta.Vista
         private void InitializeComponent()
         {
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.lblLinea = new System.Windows.Forms.Label();
             this.grpDatos = new System.Windows.Forms.GroupBox();
             this.lblDocumento = new System.Windows.Forms.Label();
             this.txtDocumento = new System.Windows.Forms.TextBox();
@@ -35,42 +36,56 @@ namespace PuntoDeVenta.Vista
 
             // lblTitulo
             this.lblTitulo.Text = "GESTIÓN DE CLIENTES";
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
             this.lblTitulo.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblTitulo.Location = new System.Drawing.Point(12, 10);
-            this.lblTitulo.Size = new System.Drawing.Size(300, 30);
+            this.lblTitulo.Location = new System.Drawing.Point(12, 15);
+            this.lblTitulo.Size = new System.Drawing.Size(760, 35);
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+
+            // lblLinea
+            this.lblLinea.Text = "";
+            this.lblLinea.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblLinea.Location = new System.Drawing.Point(12, 52);
+            this.lblLinea.Size = new System.Drawing.Size(760, 2);
 
             // grpDatos
             this.grpDatos.Text = "Datos del Cliente";
-            this.grpDatos.Location = new System.Drawing.Point(12, 50);
-            this.grpDatos.Size = new System.Drawing.Size(400, 130);
+            this.grpDatos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.grpDatos.Location = new System.Drawing.Point(12, 65);
+            this.grpDatos.Size = new System.Drawing.Size(580, 130);
 
             // lblDocumento
             this.lblDocumento.Text = "Documento:";
-            this.lblDocumento.Location = new System.Drawing.Point(10, 30);
-            this.lblDocumento.Size = new System.Drawing.Size(80, 20);
+            this.lblDocumento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblDocumento.Location = new System.Drawing.Point(15, 35);
+            this.lblDocumento.Size = new System.Drawing.Size(90, 20);
 
             // txtDocumento
-            this.txtDocumento.Location = new System.Drawing.Point(100, 27);
-            this.txtDocumento.Size = new System.Drawing.Size(280, 23);
+            this.txtDocumento.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDocumento.Location = new System.Drawing.Point(110, 32);
+            this.txtDocumento.Size = new System.Drawing.Size(440, 23);
 
             // lblNombre
             this.lblNombre.Text = "Nombre:";
-            this.lblNombre.Location = new System.Drawing.Point(10, 65);
-            this.lblNombre.Size = new System.Drawing.Size(80, 20);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblNombre.Location = new System.Drawing.Point(15, 70);
+            this.lblNombre.Size = new System.Drawing.Size(90, 20);
 
             // txtNombre
-            this.txtNombre.Location = new System.Drawing.Point(100, 62);
-            this.txtNombre.Size = new System.Drawing.Size(280, 23);
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNombre.Location = new System.Drawing.Point(110, 67);
+            this.txtNombre.Size = new System.Drawing.Size(440, 23);
 
             // lblEdad
             this.lblEdad.Text = "Edad:";
-            this.lblEdad.Location = new System.Drawing.Point(10, 100);
-            this.lblEdad.Size = new System.Drawing.Size(80, 20);
+            this.lblEdad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblEdad.Location = new System.Drawing.Point(15, 105);
+            this.lblEdad.Size = new System.Drawing.Size(90, 20);
 
             // txtEdad
-            this.txtEdad.Location = new System.Drawing.Point(100, 97);
-            this.txtEdad.Size = new System.Drawing.Size(280, 23);
+            this.txtEdad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEdad.Location = new System.Drawing.Point(110, 102);
+            this.txtEdad.Size = new System.Drawing.Size(200, 23);
 
             this.grpDatos.Controls.Add(this.lblDocumento);
             this.grpDatos.Controls.Add(this.txtDocumento);
@@ -81,35 +96,52 @@ namespace PuntoDeVenta.Vista
 
             // grpAcciones
             this.grpAcciones.Text = "Acciones";
-            this.grpAcciones.Location = new System.Drawing.Point(430, 50);
-            this.grpAcciones.Size = new System.Drawing.Size(150, 130);
+            this.grpAcciones.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.grpAcciones.Location = new System.Drawing.Point(610, 65);
+            this.grpAcciones.Size = new System.Drawing.Size(162, 130);
 
             // btnAgregar
             this.btnAgregar.Text = "+ Agregar";
-            this.btnAgregar.Location = new System.Drawing.Point(10, 25);
-            this.btnAgregar.Size = new System.Drawing.Size(120, 30);
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAgregar.Location = new System.Drawing.Point(15, 25);
+            this.btnAgregar.Size = new System.Drawing.Size(130, 30);
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
 
             // btnEliminar
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.Location = new System.Drawing.Point(10, 60);
-            this.btnEliminar.Size = new System.Drawing.Size(120, 30);
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEliminar.Location = new System.Drawing.Point(15, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(130, 30);
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.BackColor = System.Drawing.Color.Crimson;
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 
             // btnLimpiar
             this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.Location = new System.Drawing.Point(10, 95);
-            this.btnLimpiar.Size = new System.Drawing.Size(120, 30);
+            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLimpiar.Location = new System.Drawing.Point(15, 95);
+            this.btnLimpiar.Size = new System.Drawing.Size(130, 30);
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
 
             // btnMostrar
             this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.Location = new System.Drawing.Point(10, 130);
-            this.btnMostrar.Size = new System.Drawing.Size(120, 30);
+            this.btnMostrar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMostrar.Location = new System.Drawing.Point(15, 130);
+            this.btnMostrar.Size = new System.Drawing.Size(130, 30);
+            this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
 
             this.grpAcciones.Controls.Add(this.btnAgregar);
@@ -120,28 +152,34 @@ namespace PuntoDeVenta.Vista
             // lblLista
             this.lblLista.Text = "Lista de Clientes";
             this.lblLista.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblLista.Location = new System.Drawing.Point(12, 195);
-            this.lblLista.Size = new System.Drawing.Size(200, 20);
+            this.lblLista.Location = new System.Drawing.Point(12, 210);
+            this.lblLista.Size = new System.Drawing.Size(200, 22);
 
             // dgvClientes
-            this.dgvClientes.Location = new System.Drawing.Point(12, 220);
-            this.dgvClientes.Size = new System.Drawing.Size(568, 180);
+            this.dgvClientes.Location = new System.Drawing.Point(12, 235);
+            this.dgvClientes.Size = new System.Drawing.Size(760, 220);
             this.dgvClientes.AllowUserToAddRows = false;
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvClientes.BackgroundColor = System.Drawing.Color.White;
+            this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvClientes.RowHeadersVisible = false;
+            this.dgvClientes.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dgvClientes.Columns.Add("Documento", "Documento");
             this.dgvClientes.Columns.Add("Nombre", "Nombre");
             this.dgvClientes.Columns.Add("Edad", "Edad");
             this.dgvClientes.Columns.Add("Puntos", "Puntos");
 
             // FormClientes
-            this.ClientSize = new System.Drawing.Size(600, 420);
+            this.ClientSize = new System.Drawing.Size(784, 471);
             this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblLinea);
             this.Controls.Add(this.grpDatos);
             this.Controls.Add(this.grpAcciones);
             this.Controls.Add(this.lblLista);
             this.Controls.Add(this.dgvClientes);
             this.Text = "Clientes";
+            this.BackColor = System.Drawing.Color.White;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 
             this.grpDatos.ResumeLayout(false);
@@ -151,6 +189,7 @@ namespace PuntoDeVenta.Vista
         }
 
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.Label lblLinea;
         private System.Windows.Forms.GroupBox grpDatos;
         private System.Windows.Forms.Label lblDocumento;
         private System.Windows.Forms.TextBox txtDocumento;
