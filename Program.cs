@@ -1,25 +1,18 @@
 using System;
+using System.Windows.Forms;
+using PuntoDeVenta.Vista;
 
-class Program
+namespace MarketSoft
 {
-    static void Main(string[] args)
+    internal static class Program
     {
-        Producto producto =
-            new Producto(1, "Gaseosa", 5000, 20);
+        [STAThread]
+        static void Main()
+        {
+            ApplicationConfiguration.Initialize();
 
-        Cliente cliente =
-            new Cliente(1, "Sara", "3001234567");
-
-        Cajero cajero =
-            new Cajero(1, "Carlos", "3019876543",
-                        2000000, "Mañana");
-
-        Venta venta =
-            new Venta(1, cliente, producto,
-                      cajero, 2);
-
-        venta.MostrarVenta();
-
-        cajero.CobrarVenta();
+            // Abrir el menú principal
+            Application.Run(new FormMenu());
+        }
     }
 }

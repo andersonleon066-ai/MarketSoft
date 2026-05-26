@@ -24,7 +24,20 @@ namespace PuntoDeVenta.Modelo
             this.productos = new List<Producto>();
             this.fecha = DateTime.Now;
         }
+        public void EliminarProducto(Producto producto)
+        {
+            if (productos.Contains(producto))
+            {
+                productos.Remove(producto);
+                producto.ReponerStock(1);
 
+                Console.WriteLine("Producto eliminado de la venta.");
+            }
+            else
+            {
+                Console.WriteLine("El producto no está en la venta.");
+            }
+        }
         public void AgregarProducto(Producto producto)
         {
             if (producto.Stock > 0)
