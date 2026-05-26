@@ -1,0 +1,169 @@
+namespace PuntoDeVenta.Vista
+{
+    partial class FormClientes
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+                components.Dispose();
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.grpDatos = new System.Windows.Forms.GroupBox();
+            this.lblDocumento = new System.Windows.Forms.Label();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.grpAcciones = new System.Windows.Forms.GroupBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnMostrar = new System.Windows.Forms.Button();
+            this.lblLista = new System.Windows.Forms.Label();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.grpDatos.SuspendLayout();
+            this.grpAcciones.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            this.SuspendLayout();
+
+            // lblTitulo
+            this.lblTitulo.Text = "GESTIÓN DE CLIENTES";
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblTitulo.Location = new System.Drawing.Point(12, 10);
+            this.lblTitulo.Size = new System.Drawing.Size(300, 30);
+
+            // grpDatos
+            this.grpDatos.Text = "Datos del Cliente";
+            this.grpDatos.Location = new System.Drawing.Point(12, 50);
+            this.grpDatos.Size = new System.Drawing.Size(400, 130);
+
+            // lblDocumento
+            this.lblDocumento.Text = "Documento:";
+            this.lblDocumento.Location = new System.Drawing.Point(10, 30);
+            this.lblDocumento.Size = new System.Drawing.Size(80, 20);
+
+            // txtDocumento
+            this.txtDocumento.Location = new System.Drawing.Point(100, 27);
+            this.txtDocumento.Size = new System.Drawing.Size(280, 23);
+
+            // lblNombre
+            this.lblNombre.Text = "Nombre:";
+            this.lblNombre.Location = new System.Drawing.Point(10, 65);
+            this.lblNombre.Size = new System.Drawing.Size(80, 20);
+
+            // txtNombre
+            this.txtNombre.Location = new System.Drawing.Point(100, 62);
+            this.txtNombre.Size = new System.Drawing.Size(280, 23);
+
+            // lblEdad
+            this.lblEdad.Text = "Edad:";
+            this.lblEdad.Location = new System.Drawing.Point(10, 100);
+            this.lblEdad.Size = new System.Drawing.Size(80, 20);
+
+            // txtEdad
+            this.txtEdad.Location = new System.Drawing.Point(100, 97);
+            this.txtEdad.Size = new System.Drawing.Size(280, 23);
+
+            this.grpDatos.Controls.Add(this.lblDocumento);
+            this.grpDatos.Controls.Add(this.txtDocumento);
+            this.grpDatos.Controls.Add(this.lblNombre);
+            this.grpDatos.Controls.Add(this.txtNombre);
+            this.grpDatos.Controls.Add(this.lblEdad);
+            this.grpDatos.Controls.Add(this.txtEdad);
+
+            // grpAcciones
+            this.grpAcciones.Text = "Acciones";
+            this.grpAcciones.Location = new System.Drawing.Point(430, 50);
+            this.grpAcciones.Size = new System.Drawing.Size(150, 130);
+
+            // btnAgregar
+            this.btnAgregar.Text = "+ Agregar";
+            this.btnAgregar.Location = new System.Drawing.Point(10, 25);
+            this.btnAgregar.Size = new System.Drawing.Size(120, 30);
+            this.btnAgregar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+
+            // btnEliminar
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Location = new System.Drawing.Point(10, 60);
+            this.btnEliminar.Size = new System.Drawing.Size(120, 30);
+            this.btnEliminar.BackColor = System.Drawing.Color.Crimson;
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+
+            // btnLimpiar
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Location = new System.Drawing.Point(10, 95);
+            this.btnLimpiar.Size = new System.Drawing.Size(120, 30);
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+
+            // btnMostrar
+            this.btnMostrar.Text = "Mostrar";
+            this.btnMostrar.Location = new System.Drawing.Point(10, 130);
+            this.btnMostrar.Size = new System.Drawing.Size(120, 30);
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+
+            this.grpAcciones.Controls.Add(this.btnAgregar);
+            this.grpAcciones.Controls.Add(this.btnEliminar);
+            this.grpAcciones.Controls.Add(this.btnLimpiar);
+            this.grpAcciones.Controls.Add(this.btnMostrar);
+
+            // lblLista
+            this.lblLista.Text = "Lista de Clientes";
+            this.lblLista.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.lblLista.Location = new System.Drawing.Point(12, 195);
+            this.lblLista.Size = new System.Drawing.Size(200, 20);
+
+            // dgvClientes
+            this.dgvClientes.Location = new System.Drawing.Point(12, 220);
+            this.dgvClientes.Size = new System.Drawing.Size(568, 180);
+            this.dgvClientes.AllowUserToAddRows = false;
+            this.dgvClientes.ReadOnly = true;
+            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvClientes.Columns.Add("Documento", "Documento");
+            this.dgvClientes.Columns.Add("Nombre", "Nombre");
+            this.dgvClientes.Columns.Add("Edad", "Edad");
+            this.dgvClientes.Columns.Add("Puntos", "Puntos");
+
+            // FormClientes
+            this.ClientSize = new System.Drawing.Size(600, 420);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.grpDatos);
+            this.Controls.Add(this.grpAcciones);
+            this.Controls.Add(this.lblLista);
+            this.Controls.Add(this.dgvClientes);
+            this.Text = "Clientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+
+            this.grpDatos.ResumeLayout(false);
+            this.grpAcciones.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            this.ResumeLayout(false);
+        }
+
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.GroupBox grpDatos;
+        private System.Windows.Forms.Label lblDocumento;
+        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.GroupBox grpAcciones;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Label lblLista;
+        private System.Windows.Forms.DataGridView dgvClientes;
+    }
+}
