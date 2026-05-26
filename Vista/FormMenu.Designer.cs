@@ -90,7 +90,7 @@ namespace PuntoDeVenta.Vista
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
 
             // lblFooter
-            this.lblFooter.Text = "Desarrollado por equipo MarketSoft  |  2024";
+            this.lblFooter.Text = "Desarrollado por equipo MarketSoft  |  2026";
             this.lblFooter.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblFooter.ForeColor = System.Drawing.Color.Gray;
             this.lblFooter.Location = new System.Drawing.Point(0, 290);

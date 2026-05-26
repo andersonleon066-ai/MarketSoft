@@ -6,6 +6,13 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MarketSoftApp\**" />
+    <None Remove="MarketSoftApp\**" />
+    <EmbeddedResource Remove="MarketSoftApp\**" />
+  </ItemGroup>
 
 </Project>

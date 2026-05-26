@@ -4,8 +4,6 @@ C:\Users\user\Documents\GitHub\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.r
 C:\Users\user\Documents\GitHub\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.dll
 C:\Users\user\Documents\GitHub\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.pdb
 C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.AssemblyInfoInputs.cache
-C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.AssemblyInfo.cs
 C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.sourcelink.json
 C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.dll
