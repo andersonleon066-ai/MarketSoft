@@ -1,0 +1,36 @@
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+
+# Paquetes NuGet
+packages/
+*.nupkg
+
+# Configuración local
+appsettings.Development.json
+
+# Archivos generados automáticamente
+Generated Files/
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Archivos del sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
