@@ -1,15 +1,12 @@
 using PuntoDeVenta.Modelo;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace PuntoDeVenta.Servicios
 {
     public class ServicioProducto
     {
-        // Lista de productos
         private List<Producto> productos;
 
-        // Constructor
         public ServicioProducto()
         {
             productos = new List<Producto>();
@@ -18,7 +15,15 @@ namespace PuntoDeVenta.Servicios
         // CREATE
         public void AgregarProducto(Producto producto)
         {
-            productos.Add(producto);
+            if (producto != null)
+            {
+                productos.Add(producto);
+                Console.WriteLine("Producto agregado correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("Error: El producto no puede ser nulo.");
+            }
         }
 
         // READ
@@ -30,7 +35,15 @@ namespace PuntoDeVenta.Servicios
         // SEARCH
         public Producto BuscarProducto(int id)
         {
-            return productos.FirstOrDefault(p => p.Id == id);
+            foreach (Producto p in productos)
+            {
+                if (p.Id == id)
+                {
+                    return p;
+                }
+            }
+            Console.WriteLine("Producto no encontrado.");
+            return null;
         }
 
         // DELETE
@@ -41,6 +54,7 @@ namespace PuntoDeVenta.Servicios
             if (producto != null)
             {
                 productos.Remove(producto);
+                Console.WriteLine("Producto eliminado correctamente.");
                 return true;
             }
 
@@ -50,9 +64,16 @@ namespace PuntoDeVenta.Servicios
         // Mostrar productos
         public void MostrarProductos()
         {
-            foreach (Producto producto in productos)
+            if (productos.Count == 0)
             {
-                producto.MostrarInfo();
+                Console.WriteLine("No hay productos registrados.");
+            }
+            else
+            {
+                foreach (Producto p in productos)
+                {
+                    p.MostrarInfo();
+                }
             }
         }
     }

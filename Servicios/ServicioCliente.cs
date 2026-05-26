@@ -1,15 +1,12 @@
 using PuntoDeVenta.Modelo;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace PuntoDeVenta.Servicios
 {
     public class ServicioCliente
     {
-        // Lista de clientes
         private List<Cliente> clientes;
 
-        // Constructor
         public ServicioCliente()
         {
             clientes = new List<Cliente>();
@@ -18,7 +15,15 @@ namespace PuntoDeVenta.Servicios
         // CREATE
         public void AgregarCliente(Cliente cliente)
         {
-            clientes.Add(cliente);
+            if (cliente != null)
+            {
+                clientes.Add(cliente);
+                Console.WriteLine("Cliente agregado correctamente.");
+            }
+            else
+            {
+                Console.WriteLine("Error: El cliente no puede ser nulo.");
+            }
         }
 
         // READ
@@ -30,7 +35,15 @@ namespace PuntoDeVenta.Servicios
         // SEARCH
         public Cliente BuscarCliente(string documento)
         {
-            return clientes.FirstOrDefault(c => c.Documento == documento);
+            foreach (Cliente c in clientes)
+            {
+                if (c.Documento == documento)
+                {
+                    return c;
+                }
+            }
+            Console.WriteLine("Cliente no encontrado.");
+            return null;
         }
 
         // DELETE
@@ -41,6 +54,7 @@ namespace PuntoDeVenta.Servicios
             if (cliente != null)
             {
                 clientes.Remove(cliente);
+                Console.WriteLine("Cliente eliminado correctamente.");
                 return true;
             }
 
@@ -50,9 +64,16 @@ namespace PuntoDeVenta.Servicios
         // Mostrar clientes
         public void MostrarClientes()
         {
-            foreach (Cliente cliente in clientes)
+            if (clientes.Count == 0)
             {
-                cliente.MostrarInfo();
+                Console.WriteLine("No hay clientes registrados.");
+            }
+            else
+            {
+                foreach (Cliente c in clientes)
+                {
+                    c.MostrarInfo();
+                }
             }
         }
     }
