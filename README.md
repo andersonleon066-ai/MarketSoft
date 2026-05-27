@@ -1,4 +1,4 @@
-# 🛒 MarketSoft
+# MarketSoft
 
 MarketSoft es un sistema de punto de venta desarrollado en C# con Windows Forms.  
 La aplicación permite gestionar clientes, productos y ventas de manera organizada mediante una interfaz gráfica sencilla y aplicando Programación Orientada a Objetos.
@@ -7,7 +7,7 @@ El sistema está orientado a pequeños negocios que necesitan controlar inventar
 
 ---
 
-# 👥 Integrantes
+# Integrantes
 
 | Nombre | Rol | Responsabilidades principales |
 |---|---|---|
@@ -17,7 +17,7 @@ El sistema está orientado a pequeños negocios que necesitan controlar inventar
 
 ---
 
-# 📌 Descripción del problema
+# Descripción del problema
 
 Muchos pequeños negocios realizan el control de productos y ventas de manera manual, lo que puede generar errores, pérdida de información y dificultades para administrar inventario y clientes.
 
@@ -25,7 +25,7 @@ MarketSoft busca solucionar este problema mediante una aplicación de escritorio
 
 ---
 
-# 🎯 Objetivo del sistema
+# Objetivo del sistema
 
 El sistema busca:
 
@@ -40,7 +40,7 @@ El sistema busca:
 
 ---
 
-# 🖥️ Tecnologías utilizadas
+# Tecnologías utilizadas
 
 - C#
 - .NET 8
@@ -50,7 +50,7 @@ El sistema busca:
 
 ---
 
-# ⚙️ Requisitos previos
+# Requisitos previos
 
 Antes de ejecutar el proyecto se necesita:
 
@@ -61,7 +61,7 @@ Antes de ejecutar el proyecto se necesita:
 
 ---
 
-# 📥 Instalación
+#  Instalación
 
 ```bash
 git clone https://github.com/andersonleon066-ai/MarketSoft.git
@@ -69,7 +69,7 @@ cd MarketSoft
 ```
 ---
 
-# ▶️ Ejecución
+#  Ejecución
 
 Desde la terminal:
 
@@ -79,7 +79,7 @@ dotnet run
 
 ---
 
-# ✅ Funcionalidades principales
+# Funcionalidades principales
 
 - Crear registros.
 - Listar registros.
@@ -92,7 +92,7 @@ dotnet run
 
 ---
 
-# 📁 Estructura del proyecto
+#  Estructura del proyecto
 
 ```text
 MarketSoft/
@@ -129,7 +129,7 @@ MarketSoft/
 
 ---
 
-# 🏗️ Arquitectura
+# Arquitectura
 
 La arquitectura del proyecto está organizada por capas:
 
@@ -140,14 +140,14 @@ La arquitectura del proyecto está organizada por capas:
 
 ---
 
-# 📊 Diagrama UML
+# Diagrama UML
 
 ![Diagrama de clases](./Diagramas/clases.png)
 ![Diagrama de servicios](./Diagramas/servicios.png)
 
 ---
 
-# 🖼️ Capturas de pantalla
+# Capturas de pantalla
 
 
 ![Menú principal](./Diagramas/menu.png)
@@ -159,7 +159,7 @@ La arquitectura del proyecto está organizada por capas:
 
 ---
 
-# 🧪 Ejemplo de uso
+#  Ejemplo de uso
 
 1. Abrir la aplicación.
 2. Registrar un producto.
@@ -170,7 +170,7 @@ La arquitectura del proyecto está organizada por capas:
 
 ---
 
-# ✔️ Validaciones implementadas
+#  Validaciones implementadas
 
 - Campos obligatorios.
 - Validación de números positivos.
@@ -181,7 +181,7 @@ La arquitectura del proyecto está organizada por capas:
 
 ---
 
-# 🧠 Conceptos de POO aplicados
+#  Conceptos de POO aplicados
 
 ## Clases y objetos
 
@@ -223,7 +223,7 @@ List<Venta>
 
 ---
 
-# ⚠️ Limitaciones conocidas
+#  Limitaciones conocidas
 
 - Los datos no se guardan en base de datos.
 - No existe autenticación de usuarios.
@@ -232,7 +232,7 @@ List<Venta>
 
 ---
 
-# 🚀 Mejoras futuras
+#  Mejoras futuras
 
 - Persistencia en base de datos.
 - Autenticación de usuarios.
@@ -242,7 +242,7 @@ List<Venta>
 
 ---
 
-# 🤖 Declaración de uso de IA
+#  Declaración de uso de IA
 
 Herramienta utilizada: ChatGPT, Claude y Gemini
 
@@ -277,7 +277,7 @@ El equipo comprende el código implementado y puede explicarlo durante la susten
 
 ---
 
-# 📚 Licencia y créditos
+# Licencia y créditos
 
 Proyecto desarrollado con fines académicos para la asignatura Herramientas de Programación.
 
