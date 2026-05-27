@@ -142,19 +142,19 @@ La arquitectura del proyecto está organizada por capas:
 
 # Diagrama UML
 
-![Diagrama de clases](./Diagramas/clases.png)
-![Diagrama de servicios](./Diagramas/servicios.png)
+![Diagrama de clases](Diagramas/clases.png)
+![Diagrama de servicios](Diagramas/servicios.png)
 
 ---
 
 # Capturas de pantalla
 
 
-![Menú principal](./Diagramas/menu.png)
-![Formulario productos](./Diagramas/productos.png)
-![Formulario clientes](./Diagramas/clientes.png)
-![Formulario ventas](./Diagramas/ventas.png)
-![Formulario salir](./Diagramas/salir.png)
+![Menú principal](Diagramas/menu.png)
+![Formulario productos](Diagramas/productos.png)
+![Formulario clientes](Diagramas/clientes.png)
+![Formulario ventas](Diagramas/ventas.png)
+![Formulario salir](Diagramas/salir.png)
 
 
 ---
