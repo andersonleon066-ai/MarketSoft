@@ -67,13 +67,6 @@ Antes de ejecutar el proyecto se necesita:
 git clone https://github.com/andersonleon066-ai/MarketSoft.git
 cd MarketSoft
 ```
-
-Si el proyecto usa paquetes NuGet:
-
-```bash
-dotnet restore
-```
-
 ---
 
 # ▶️ Ejecución
@@ -154,18 +147,20 @@ Agregar imagen del diagrama UML.
 Ejemplo:
 
 ```markdown
-![Diagrama de clases](Diagramas/diagrama-clases.png)
+![Diagrama de clases](Diagramas/clases.png)
+![Diagrama de servicios](Diagramas/servicios.png)
 ```
 
 ---
 
 # 🖼️ Capturas de pantalla
 
-Agregar capturas de las pantallas principales.
-
 ```markdown
-![Ventana principal](docs/captura-principal.png)
-![Formulario productos](docs/productos.png)
+![Menú principal](Diagramas/menu.png)
+![Formulario productos](Diagramas/productos.png)
+![Formulario clientes](Diagramas/clientes.png)
+![Formulario ventas](Diagramas/ventas.png)
+![Formulario salir](Diagramas/salir.png)
 ```
 
 ---
@@ -255,7 +250,7 @@ List<Venta>
 
 # 🤖 Declaración de uso de IA
 
-Herramienta utilizada: ChatGPT.
+Herramienta utilizada: ChatGPT, Claude y Gemini
 
 Propósito: apoyo en organización de arquitectura, validaciones, solución de errores y estructura del README.
 
