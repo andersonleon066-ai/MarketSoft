@@ -177,6 +177,7 @@ namespace PuntoDeVenta.Vista
             this.dgvProductosVenta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvProductosVenta.RowHeadersVisible = false;
             this.dgvProductosVenta.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgvProductosVenta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect; // <- agregar esta línea
             this.dgvProductosVenta.Columns.Add("ID", "ID");
             this.dgvProductosVenta.Columns.Add("Producto", "Producto");
             this.dgvProductosVenta.Columns.Add("Precio", "Precio");

@@ -11,3 +11,16 @@ C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\refint\Marke
 C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.pdb
 C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.genruntimeconfig.cache
 C:\Users\user\Documents\GitHub\MarketSoft\obj\Debug\net10.0-windows\ref\MarketSoft.dll
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.exe
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.deps.json
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.runtimeconfig.json
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.dll
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\bin\Debug\net10.0-windows\MarketSoft.pdb
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.csproj.CoreCompileInputs.cache
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.sourcelink.json
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.dll
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\refint\MarketSoft.dll
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.pdb
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\MarketSoft.genruntimeconfig.cache
+C:\Users\Mariana\Desktop\Proyecto Final Herramientas De Programación\MarketSoft\obj\Debug\net10.0-windows\ref\MarketSoft.dll
