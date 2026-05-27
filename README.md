@@ -142,10 +142,6 @@ La arquitectura del proyecto está organizada por capas:
 
 # 📊 Diagrama UML
 
-Agregar imagen del diagrama UML.
-
-Ejemplo:
-
 ![Diagrama de clases](./Diagramas/clases.png)
 ![Diagrama de servicios](./Diagramas/servicios.png)
 
